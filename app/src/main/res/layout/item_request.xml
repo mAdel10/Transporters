@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_request_cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@color/colorWhite"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/get_goods_type_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good Type:"
+            android:layout_marginTop="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/colorPrimaryMoreDark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/get_goods_weight_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Good Weight:"
+            android:layout_marginTop="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/colorPrimaryMoreDark"
+            app:layout_constraintStart_toStartOf="@id/get_goods_type_request"
+            app:layout_constraintTop_toBottomOf="@+id/get_goods_type_request"
+            />
+
+        <TextView
+            android:id="@+id/get_goods_payment_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment:"
+            android:layout_marginTop="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/colorPrimaryMoreDark"
+            app:layout_constraintStart_toStartOf="@id/get_goods_weight_request"
+            app:layout_constraintTop_toBottomOf="@+id/get_goods_weight_request"
+            />
+
+        <TextView
+            android:id="@+id/get_goods_distance_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Distance:"
+            android:layout_marginTop="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/colorPrimaryMoreDark"
+            app:layout_constraintStart_toStartOf="@id/get_goods_payment_request"
+            app:layout_constraintTop_toBottomOf="@+id/get_goods_payment_request"
+            />
+
+        <TextView
+            android:id="@+id/get_goods_price_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price:"
+            android:layout_marginTop="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/colorPrimaryMoreDark"
+            app:layout_constraintStart_toStartOf="@id/get_goods_distance_request"
+            app:layout_constraintTop_toBottomOf="@+id/get_goods_distance_request"
+            />
+
+        <TextView
+            android:id="@+id/item_get_good_type_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="40dp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/colorPrimaryMoreDark"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/get_goods_type_request"
+            android:layout_marginLeft="40dp" />
+
+        <TextView
+            android:id="@+id/item_get_good_weight_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/colorPrimaryMoreDark"
+            app:layout_constraintStart_toStartOf="@+id/item_get_good_type_request"
+            app:layout_constraintTop_toBottomOf="@id/item_get_good_type_request"
+            />
+
+        <TextView
+            android:id="@+id/item_get_good_payment_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/colorPrimaryMoreDark"
+            app:layout_constraintStart_toStartOf="@+id/item_get_good_weight_request"
+            app:layout_constraintTop_toBottomOf="@id/item_get_good_weight_request"
+            />
+
+        <TextView
+            android:id="@+id/item_get_good_distance_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/colorPrimaryMoreDark"
+            app:layout_constraintStart_toStartOf="@+id/item_get_good_payment_request"
+            app:layout_constraintTop_toBottomOf="@id/item_get_good_payment_request"
+            />
+
+        <TextView
+            android:id="@+id/item_get_good_price_request"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="4dp"
+            android:textColor="@color/colorPrimaryMoreDark"
+            app:layout_constraintStart_toStartOf="@+id/item_get_good_distance_request"
+            app:layout_constraintTop_toBottomOf="@id/item_get_good_distance_request"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>

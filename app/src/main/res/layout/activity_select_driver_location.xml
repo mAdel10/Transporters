@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CompanySelectLocation">
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/select_driver_location_mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        mapbox:mapbox_cameraTargetLat="29.9772638"
+        mapbox:mapbox_cameraTargetLng="31.2511902"
+        mapbox:mapbox_cameraZoom="15" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/select_driver_location_back_to_camera_tracking_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_my_location"
+        tools:ignore="RelativeOverlap,VectorDrawableCompat" />
+
+    <Button
+        android:padding="5dp"
+        android:id="@+id/selecr_driver_location_start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="25dp"
+        android:enabled="false"
+        android:background="@drawable/round_button"
+        android:textColor="@color/colorWhite"
+        android:text="@string/click_on_map"
+        android:textSize="20sp" />
+
+</RelativeLayout>

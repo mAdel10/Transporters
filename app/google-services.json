@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "1056962052084",
+    "firebase_url": "https://transporter-7af53.firebaseio.com",
+    "project_id": "transporter-7af53",
+    "storage_bucket": "transporter-7af53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056962052084:android:ed85d3c5fcddcc74",
+        "android_client_info": {
+          "package_name": "com.memaro.transporter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1056962052084-jass97epj1eb3vns12knnqmp1b6rjsep.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.memaro.transporter",
+            "certificate_hash": "e7ce8018e4af4d3196bd55dfde4ecf589144469a"
+          }
+        },
+        {
+          "client_id": "1056962052084-t1gtnejqg7ms3u793r2uk5jafu1ghkqi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.memaro.transporter",
+            "certificate_hash": "49e7ee5ad2970f186e9b333252f5cc44694d7466"
+          }
+        },
+        {
+          "client_id": "1056962052084-pp3up2pvf1lbbofhahr92ajcqftrhrmo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq6cGmbw8Gp84KS_CCrRRhJ27C7ndZMxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1056962052084-pp3up2pvf1lbbofhahr92ajcqftrhrmo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

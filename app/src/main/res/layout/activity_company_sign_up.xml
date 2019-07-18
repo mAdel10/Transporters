@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CompanySignUpActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="16dp" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="16dp" />
+
+        <TextView
+            android:id="@+id/sign_up_company_header_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="@string/create_company_account"
+            android:textColor="@color/colorPrimary"
+            android:textSize="32sp"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/sign_up_company_img_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
+            android:src="@drawable/user"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/sign_up_company_header_textView" />
+
+        <EditText
+            android:id="@+id/signUp_company_name_editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/back_border_gray"
+            android:hint="@string/company_name"
+            android:inputType="text"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorGray"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/sign_up_company_img_view"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/signUp_company_email_editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/back_border_gray"
+            android:hint="@string/company_email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorGray"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/signUp_company_name_editText"
+            tools:ignore="Autofill" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/PasswordLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:passwordToggleEnabled="true"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/signUp_company_email_editText"
+            tools:ignore="Autofill">
+
+        <EditText
+            android:id="@+id/signUp_company_password_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/back_border_gray"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorGray"
+            tools:ignore="Autofill" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/confirmPasswordLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:passwordToggleEnabled="true"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@id/PasswordLayout"
+            tools:ignore="Autofill">
+
+
+        <EditText
+            android:id="@+id/signUp_company_confirm_password_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/back_border_gray"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorGray"
+            tools:ignore="Autofill" />
+        </android.support.design.widget.TextInputLayout>
+
+        <EditText
+            android:id="@+id/signUp_company_market_number_editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/back_border_gray"
+            android:hint="@string/market_number"
+            android:inputType="number"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorGray"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/confirmPasswordLayout"
+            tools:ignore="Autofill" />
+
+        <EditText
+            android:id="@+id/signUp_company_address_editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/back_border_gray"
+            android:hint="@string/address"
+            android:inputType="text"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorGray"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/signUp_company_market_number_editText"
+            tools:ignore="Autofill" />
+
+        <TextView
+            android:id="@+id/signUp_company_select_location_editText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/back_solid_primary"
+            android:hint="@string/select_company_location"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/colorTitle"
+            android:textColorHint="@color/colorGray"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/signUp_company_market_number_editText"
+            tools:ignore="Autofill" />
+
+        <!--<LinearLayout-->
+            <!--android:id="@+id/signUp_Lat_lng_layout"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:orientation="horizontal"-->
+            <!--app:layout_constraintEnd_toEndOf="@id/guideline_end"-->
+            <!--app:layout_constraintStart_toStartOf="@id/guideline_start"-->
+            <!--app:layout_constraintTop_toBottomOf="@id/signUp_company_select_location_editText">-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/signUp_lat_editText"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/back_border_gray"-->
+                <!--android:hint="@string/latitude"-->
+                <!--android:textColor="@color/colorTitle"-->
+                <!--android:textColorHint="@color/colorGray"-->
+                <!--android:paddingStart="8dp"-->
+                <!--android:paddingTop="8dp"-->
+                <!--android:paddingEnd="8dp"-->
+                <!--android:paddingBottom="8dp"-->
+                <!--android:layout_marginRight="8dp" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/signUp_lng_editText"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginStart="8dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/back_border_gray"-->
+                <!--android:hint="@string/longitude"-->
+                <!--android:textColor="@color/colorTitle"-->
+                <!--android:textColorHint="@color/colorGray"-->
+                <!--android:paddingStart="8dp"-->
+                <!--android:paddingTop="8dp"-->
+                <!--android:paddingEnd="8dp"-->
+                <!--android:paddingBottom="8dp"-->
+                <!--android:layout_marginLeft="8dp" />-->
+
+        <!--</LinearLayout>-->
+
+        <Button
+            android:id="@+id/signUp_company_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/back_solid_primary"
+            android:text="@string/sign_up"
+            android:textAllCaps="false"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/signUp_company_select_location_editText" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

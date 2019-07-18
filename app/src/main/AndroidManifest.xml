@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.memaro.transporter">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name=".Activities.SelectDriverLocation"></activity>
+        <activity android:name=".Activities.IntroActivity" />
+        <activity android:name=".Activities.DriverTrip" />
+        <activity android:name=".Activities.CompanySendRequest" />
+        <activity android:name=".Activities.DriverHome" />
+        <activity android:name=".Activities.DriverLogInActivity" />
+        <activity android:name=".Activities.GetRequestActivity" />
+        <activity android:name=".Activities.CompanySelectLocation" />
+        <activity android:name=".Activities.AddTransporter" />
+        <activity android:name=".Activities.CompanyHomeActivity" />
+        <activity android:name=".Activities.RateActivity" />
+        <activity android:name=".Activities.CarInformationActivity" />
+        <activity android:name=".Activities.SendProblemActivity" />
+        <activity android:name=".Activities.SettingAccountActivity" />
+        <activity android:name=".Activities.DriverLocationActivity" />
+        <activity android:name=".Activities.ClientSignUpActivity" />
+        <activity android:name=".Activities.ClientLogInActivity" />
+        <activity android:name=".Activities.ClientActivity" />
+        <activity android:name=".Activities.ClientMapActivity" />
+        <activity android:name=".Activities.DriverInfo" />
+        <activity android:name=".Activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.ServiceRequestActivity" />
+        <activity android:name=".Activities.CompanyLogInActivity" />
+        <activity android:name=".Activities.CompanySignUpActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

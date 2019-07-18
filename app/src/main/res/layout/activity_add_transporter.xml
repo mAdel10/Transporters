@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.AddTransporter">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/add_transporter_driver_img_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/user"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"/>
+
+    <EditText
+        android:id="@+id/add_transporter_name_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/back_border_gray"
+        android:hint="@string/driver_name"
+        android:inputType="text"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/colorPrimaryMoreDark"
+        android:textColorHint="@color/colorGray"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/add_transporter_driver_img_view"
+        tools:ignore="UnusedAttribute"
+        android:autofillHints="AutoFillHints" />
+
+    <EditText
+        android:id="@+id/add_transporter_phone_number_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back_border_gray"
+        android:hint="@string/phone_number"
+        android:inputType="phone"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/colorPrimaryMoreDark"
+        android:textColorHint="@color/colorGray"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/add_transporter_name_editText"
+        tools:ignore="UnusedAttribute"
+        android:autofillHints="AutoFillHints"/>
+
+    <EditText
+        android:id="@+id/add_transporter_email_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back_border_gray"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/colorPrimaryMoreDark"
+        android:textColorHint="@color/colorGray"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@+id/add_transporter_phone_number_editText"
+        tools:ignore="UnusedAttribute"
+        android:autofillHints="AutoFillHints"/>
+
+    <EditText
+        android:id="@+id/add_transporter_driver_id_editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back_border_gray"
+        android:hint="@string/driver_id"
+        android:inputType="text"
+        android:paddingStart="8dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/colorPrimaryMoreDark"
+        android:textColorHint="@color/colorGray"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@+id/add_transporter_email_editText"
+        tools:ignore="UnusedAttribute"
+        android:autofillHints="AutoFillHints"/>
+
+     <android.support.design.widget.TextInputLayout
+         android:id="@+id/PasswordLayout"
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="16dp"
+         android:paddingStart="8dp"
+         android:paddingTop="8dp"
+         android:paddingEnd="8dp"
+         android:paddingBottom="8dp"
+         app:passwordToggleEnabled="true"
+         android:background="@drawable/back_border_gray"
+         app:layout_constraintStart_toStartOf="@id/guideline_start"
+         app:layout_constraintEnd_toEndOf="@id/guideline_end"
+         app:layout_constraintTop_toBottomOf="@+id/add_transporter_driver_id_editText"
+         tools:ignore="MissingConstraints">
+
+         <EditText
+             android:id="@+id/add_transporter_password_editText"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:hint="@string/password"
+             android:inputType="textPassword"
+             android:textColor="@color/colorPrimaryMoreDark"
+             android:textColorHint="@color/colorGray"
+             app:layout_constraintTop_toBottomOf="@+id/add_transporter_driver_id_editText"
+             android:autofillHints="AutoFillHints"
+             tools:ignore="UnusedAttribute" />
+     </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/car_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:background="@drawable/back_border_gray"
+        app:layout_constraintEnd_toEndOf="@id/guideline_end"
+        app:layout_constraintStart_toStartOf="@id/guideline_start"
+        app:layout_constraintTop_toBottomOf="@id/PasswordLayout">
+
+
+        <EditText
+            android:id="@+id/add_transporter_car_type_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/back_border_gray"
+            android:layout_weight="1"
+            android:hint="@string/car_type"
+            android:inputType="text"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/colorPrimaryMoreDark"
+            android:textColorHint="@color/colorGray"/>
+
+        <EditText
+            android:id="@+id/add_transporter_car_number_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/back_border_gray"
+            android:hint="@string/car_number"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/colorPrimaryMoreDark"
+            android:textColorHint="@color/colorGray"
+            tools:ignore="TextFields" />
+
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/add_transporter_add_transporter_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:background="@drawable/back_solid_primary"
+            android:text="@string/add_transporter"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/car_layout" />
+
+        <Button
+            android:onClick="openSelectDriverLocation"
+android:id="@+id/add_transporter_add_transporter_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/back_solid_primary"
+            android:text="Select transporter location"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/guideline_end"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@id/guideline_start"
+            app:layout_constraintTop_toBottomOf="@+id/car_layout" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
